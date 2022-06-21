@@ -1,0 +1,21 @@
+/* My fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@600;700&display=swap');
+
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --main-color: #FA4A0C;
+}
+
+body {
+  font-family: var(--font-poppins);
+  font-weight: 600;
+  color: #333;
+}
+
+.custom-container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 100px;
+  padding-left: 100px;
+}
