@@ -1,10 +1,11 @@
 /* My fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@600;700&display=swap');
 
 :root {
   --font-poppins: 'Poppins', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
   --main-color: #FA4A0C;
+  --black-color: #252B42;
 }
 
 body {
@@ -18,4 +19,162 @@ body {
   margin-left: auto;
   padding-right: 100px;
   padding-left: 100px;
+}
+
+.navbar {
+  font-family: var(--font-montserrat);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--black-color);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 3rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: var(--main-color);
+}
+
+#hero {
+  background-image: url('../img/hero-image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 620px;
+}
+
+#hero .container-fluid .container {
+  position: relative;  
+}
+
+.hero-description {
+  padding: 5rem 0;
+  color: #fff;
+}
+
+.hero-description h5 {
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.hero-description h1 {
+  width: 1005px;
+  font-family: var(--font-poppins);
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 0.2px;
+}
+
+.hero-description p {
+  font-family: var(--font-montserrat);
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 0;
+}
+
+.hero-cta {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.hero-cta .button-orange-primary {
+  background-color: var(--main-color);
+  color: #fff;
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+  text-align: center;
+  line-height: 36px;
+  font-size: 24px;
+  width: 236px;
+  padding: 10px 0;
+  border: none;
+  border-radius: 30px;
+}
+
+.hero-cta .button-transparent-primary {
+  background-color: transparent;
+  color: #fff;
+  font-family: var(--font-montserrat);
+  font-weight: 700;
+  text-align: center;
+  line-height: 36px;
+  font-size: 24px;
+  width: 236px;
+  padding: 10px 0;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+
+#hero .hero-app-section {
+  height: auto;
+}
+
+#hero .hero-app-section .app-image {
+  position: absolute;
+  top: 60%;
+  filter: drop-shadow(0 2px 6px rgb(74, 74, 74));
+}
+
+.horizontal-parent {
+  height: 500px;
+  width: auto;
+  position: relative;
+}
+
+.hr-element {
+  width: 60%;
+  height: 3px;
+  background-color: #E4E4E4;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  border: none;
+}
+
+/* FAQ style */
+
+#faq {
+  font-family: var(--font-montserrat);
+  height: 100vh;
+  width: auto;
+}
+
+#faq h2 {
+  font-family: var(--font-poppins);
+  text-align: center;
+  font-weight: 600;
+  font-size: 44px;
+  letter-spacing: 0.2px;
+  margin-bottom: 24px;
+}
+
+#faq .faq-parent .faq-tags {
+  color: var(--main-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  display: inline-block;
+  letter-spacing: 0.1px;
+}
+
+#faq .faq-parent .faq-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+}
+
+#faq .faq-parent .faq-desc {
+  color: #737373;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
 }
