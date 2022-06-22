@@ -185,3 +185,15 @@ body {
   line-height: 38px;
   letter-spacing: 0.2px;
 }
+
+
+/* Contact section */
+
+#download {
+  background-image: url('../img/download-image-section.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
