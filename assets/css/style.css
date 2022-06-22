@@ -1,5 +1,5 @@
 /* My fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap');
 
 :root {
   --font-poppins: 'Poppins', sans-serif;
@@ -43,7 +43,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 620px;
+  height: 640px;
 }
 
 #hero .container-fluid .container {
@@ -88,7 +88,7 @@ body {
   background-color: var(--main-color);
   color: #fff;
   font-family: var(--font-montserrat);
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   line-height: 36px;
   font-size: 24px;
@@ -102,7 +102,7 @@ body {
   background-color: transparent;
   color: #fff;
   font-family: var(--font-montserrat);
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   line-height: 36px;
   font-size: 24px;
@@ -142,11 +142,14 @@ body {
 
 #faq {
   font-family: var(--font-montserrat);
-  height: 100vh;
-  width: auto;
+  padding: 100px 0;
 }
 
-#faq h2 {
+#faq .faq-parent {
+  gap: 80px;
+}
+
+#faq h1 {
   font-family: var(--font-poppins);
   text-align: center;
   font-weight: 600;
@@ -155,7 +158,11 @@ body {
   margin-bottom: 24px;
 }
 
-#faq .faq-parent .faq-tags {
+#faq .text-desc {
+  width: 568px;
+}
+
+#faq .text-desc h4 {
   color: var(--main-color);
   font-size: 24px;
   font-weight: 700;
@@ -164,14 +171,14 @@ body {
   letter-spacing: 0.1px;
 }
 
-#faq .faq-parent .faq-heading {
+#faq .text-desc h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 57px;
   letter-spacing: 0.2px;
 }
 
-#faq .faq-parent .faq-desc {
+#faq .text-desc p {
   color: #737373;
   font-weight: 500;
   font-size: 24px;
