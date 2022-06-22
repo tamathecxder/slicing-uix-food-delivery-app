@@ -194,6 +194,101 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 750px;
+  padding: 14rem 0;
 }
 
+#download .download-description {
+  font-family: var(--font-montserrat);
+  color: #Fff;
+  width: 100%;
+}
+
+#download .download-description h1 {
+  font-size: 54px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+#download .download-description p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+}
+
+#download .download-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+#download .download-cta .button-download-playstore {
+  width: 142px;
+  height: 64px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  background-color: var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#download .download-cta .button-download-appstore {
+  width: 180px;
+  height: 64px;
+  padding: 20px 40px;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#footer-contact {
+  width: 100%;
+  height: auto;
+  padding: 60px;
+}
+
+#footer-contact .custom-footer-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+#footer-contact .footer-copyright h4 {
+  font-family: var(--font-poppins);
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #5C5C5C;
+}
+
+#footer-contact .footer-logo {
+  width: 100%;
+  height: auto;
+}
+
+#footer-contact .footer-logo img {
+  width: 246px;
+}
+
+#footer-contact .footer-smedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+#footer-contact .footer-smedia img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
