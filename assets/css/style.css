@@ -506,7 +506,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    margin-top: -60px;
+    margin-top: -180px;
+    margin-bottom: 100px;
   }
   
   #faq .phone-image img {
