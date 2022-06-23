@@ -361,15 +361,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 575px) {
   /* Firefox-Hack */
   /* body {
@@ -573,9 +564,9 @@ body {
     line-height: 38px;
     letter-spacing: 0.2px;
   }
+
     
   /* Download section */
-
   #download {
     background-image: none;
     background-color: #252B42;
@@ -614,8 +605,9 @@ body {
   }
 
   #download .download-cta .button-download-playstore {
-    width: 142px;
-    height: 64px;
+    text-align: center;
+    width: auto;
+    height: auto;
     padding: 20px 40px;
     border: none;
     border-radius: 12px;
@@ -626,8 +618,9 @@ body {
   }
 
   #download .download-cta .button-download-appstore {
-    width: 180px;
-    height: 64px;
+    text-align: center;
+    height: auto;
+    width: auto;
     padding: 20px 40px;
     border: 3px solid #fff;
     border-radius: 12px;
@@ -637,7 +630,6 @@ body {
     font-weight: 600;
   }
 
-  
 
   /* Footer RESPONSIVE */
   #footer-contact {
@@ -680,7 +672,6 @@ body {
     top: 25%;
     left: 50%;
   }
-
   
 }
 
