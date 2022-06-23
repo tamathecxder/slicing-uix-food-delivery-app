@@ -44,6 +44,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 640px;
+  width: 100%;
 }
 
 #hero .container-fluid .container {
@@ -143,10 +144,15 @@ body {
 #faq {
   font-family: var(--font-montserrat);
   padding: 100px 0;
+  width: 100%;
+  height: auto;
 }
 
 #faq .faq-parent {
   gap: 80px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 #faq h1 {
@@ -295,6 +301,14 @@ body {
   background-repeat: no-repeat;
 }
 
+/* MY ORIGINAL RULE */
+.flex-evenly-pada-image {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-evenly !important;
+}
+
+
 .width-25 {
   width: 25%;
 }
@@ -310,12 +324,34 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 480px) {
+  /* Firefox-Hack */
+  /* body {
+    overflow: hidden;
+  } */
+
   /* NAVBAR RESPONSIVE */
   .navbar .main-logo-navbar {
     width: 104px;
   }
-
+  
   /* Hero RESPONSIVE */
   #home .custom-container-fluid {
     padding: 0;
@@ -422,7 +458,7 @@ body {
   }
 
   .hr-element {
-    width: 100%;
+    width: 50%;
     height: 3px;
     background-color: #E4E4E4;
     position: absolute;
@@ -444,7 +480,7 @@ body {
   }
     
   #faq .faq-parent {
-    gap: 0px;
+    display: inline-flex;
   }
 
   #faq .faq-sm-content-reverse {
@@ -473,8 +509,10 @@ body {
   #faq .phone-image {
     width: 100%;
     height: auto;
-    display: block !important;
-    margin-top: -40px;
+  }
+  
+  #faq .phone-image img {
+    width: 100%;
   }
   
   #faq .text-desc h4 {
@@ -502,52 +540,6 @@ body {
     line-height: 38px;
     letter-spacing: 0.2px;
   }
-    
-  /* Footer-contact style */
-
-  #footer-contact {
-    width: 100%;
-    height: auto;
-    padding: 60px;
-  }
-
-  #footer-contact .custom-footer-container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-
-  #footer-contact .footer-copyright h4 {
-    font-family: var(--font-poppins);
-    font-size: 20px;
-    line-height: 18px;
-    letter-spacing: 0.2px;
-    color: #5C5C5C;
-  }
-
-  #footer-contact .footer-logo {
-    width: 100%;
-    height: auto;
-  }
-
-  #footer-contact .footer-logo img {
-    width: 246px;
-  }
-
-  #footer-contact .footer-smedia {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 26px;
-  }
-
-  #footer-contact .footer-smedia img {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
     
   /* Download section */
 
@@ -610,6 +602,50 @@ body {
     background-color: transparent;
     font-size: 16px;
     font-weight: 600;
+  }
+
+  
+
+  /* Footer RESPONSIVE */
+  #footer-contact {
+    position: relative;
+    padding: 100px 0;
+  }
+
+  .footer-copyright {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+  }
+  
+  #footer-contact .footer-copyright h4 {
+    font-family: var(--font-poppins);
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #5C5C5C;
+  }
+  
+  #footer-contact .footer-logo {
+    width: auto;
+    height: auto;
+  }
+  
+  #footer-contact .footer-logo img {
+    display: none;
+  }
+  
+  #footer-contact .footer-smedia {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;
   }
 
   
