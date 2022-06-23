@@ -45,9 +45,6 @@ body {
   background-repeat: no-repeat;
   height: 640px;
   width: 100%;
-}
-
-#hero .container-fluid .container {
   position: relative;  
 }
 
@@ -119,7 +116,9 @@ body {
 
 #hero .hero-app-section .app-image {
   position: absolute;
-  top: 60%;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   filter: drop-shadow(0 2px 6px rgb(74, 74, 74));
 }
 
@@ -149,7 +148,7 @@ body {
 }
 
 #faq .faq-parent {
-  gap: 80px;
+  gap: 200px;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -341,7 +340,7 @@ body {
 
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 575px) {
   /* Firefox-Hack */
   /* body {
     overflow: hidden;
@@ -365,26 +364,24 @@ body {
     height: 600px;
     font-family: var(--font-montserrat);
     background-image: none;
-    background: purple;
   }
 
-  #hero .container-fluid .container {
-    position: static;  
-    background-color: aquamarine;
-  }  
-
   #hero .hero-app-section {
+    width: 100%;
     height: auto;
-    background-color: #252B42;
   }  
   
   #hero .hero-app-section .app-image {
+    width: 80%;
+    height: auto;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
-    top: 100%;
-    left: 40%;
+    top: 160%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 422px;
-    padding-bottom: 200px;
+    padding-bottom: 180px;
   }
 
   .hero-description h5 {
@@ -458,7 +455,7 @@ body {
   }
 
   .hr-element {
-    width: 50%;
+    width: 80%;
     height: 3px;
     background-color: #E4E4E4;
     position: absolute;
@@ -477,10 +474,6 @@ body {
 
   .width-25 {
     width: 50%;
-  }
-    
-  #faq .faq-parent {
-    display: inline-flex;
   }
 
   #faq .faq-sm-content-reverse {
@@ -509,10 +502,19 @@ body {
   #faq .phone-image {
     width: 100%;
     height: auto;
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-top: -60px;
   }
   
   #faq .phone-image img {
-    width: 100%;
+    width: 80%;
+    overflow: hidden;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
   
   #faq .text-desc h4 {
